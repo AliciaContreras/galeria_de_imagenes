@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gatitos y jQuery</title>
+    <meta name="description" content="Galería de imágenes con jQuery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-layer"></div>
+    <div class="content-layer">
+        <header>
+            <h1>Gatitos lindos para hacer tu día más feliz</h1>
+            <p>Haz clic en una imagen para verla en grande</p>
+        </header>
+        <div class="gallery-grid">
+        </div>
+    </div>
+    <div class="footer-container">
+        <footer class="site-footer">
+            <p>
+                "El tiempo pasado con los gatos nunca es tiempo perdido."
+                <br>
+                <span class="author">- Sigmund Freud (atribuido)</span>
+            </p>
+            <div class="footer-separator"></div>
+            <p class="copyright">
+                Galería de Gatos © 2025. Creado con amor y jQuery para Bootcamp Fullstack Python.
+            </p>
+        </footer>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-wrapper">
+            <span class="close-button">×</span>
+            <a class="prev-button">❮</a>
+            <img class="modal-content" id="modal-image">
+            <a class="next-button">❯</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
